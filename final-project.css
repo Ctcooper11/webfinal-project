@@ -1,0 +1,94 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+  
+  .Header { grid-area: 1 / 1 / 5 / 9; }
+    .Header { 
+        grid-area: Header; 
+        background-color: lightblue;
+        width: 100vh;
+        width: 100%;
+        height: 40vh;
+        position: absolute;
+ }
+    .Header{ grid-area: Header; }
+     .Logo-img{
+        height: 50vh;
+        float: center;
+        width: 27%;
+        position: relative;
+        z-index: 1;
+}
+
+  .Name { grid-area: 2 / 4 / 3 / 6; }
+    .Name { 
+    grid-area: Name; 
+    background-color: blue;
+    float: center;
+    text-align: center;
+    width: 30%;
+    height: 10vh;
+}
+  
+  .Slogan { grid-area: 3 / 4 / 4 / 6; }
+  .Slogan { 
+    grid-area: Slogan; 
+    background-color:palevioletred;
+    text-align: center;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    z-index: 1;
+}
+  
+  .Page1 { grid-area: 5 / 1 / 6 / 3;}
+  .Page1 { grid-area: Page1;
+    background-color:yellow;
+    text-align: center;
+    width: 40%;
+    float: left;
+}
+  
+  .Page2 { grid-area: 5 / 3 / 6 / 6; }
+  .Page2 { grid-area: Page2;
+    background-color:lightskyblue;
+    text-align: center;
+    width: 40%;
+    float: center;
+}
+  
+  .Page3 { grid-area: 5 / 6 / 6 / 9; }
+  .Page3 { grid-area: Page3;
+    background-color:lightcoral;
+    text-align: center;
+    width: 40%;
+    float: right;
+}
+  
+  .Aesthetic-picture-right { grid-area: 6 / 5 / 16 / 9; }
+  .Phone-img { grid-area: Aesthetic-picture-right;
+    height: 100vh;
+    float: right;
+ }
+  
+  .Coffee-picture1-left { grid-area: 6 / 1 / 18 / 5; }
+  .Coffeeleft-img { grid-area: Coffee-picture1-left;
+    height: 100vh;
+    float: left;
+}
+  
+  .Beans-pattern { grid-area: 16 / 5 / 18 / 9; }
+
+ 
+  @media(max-width:100vh) {
+    .container {  display: grid;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        height: 100vh;
+        overflow: hidden;
+    }  
+    }
